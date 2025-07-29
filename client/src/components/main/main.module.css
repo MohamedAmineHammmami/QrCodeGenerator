@@ -1,0 +1,9 @@
+.container {
+  width: 60vw;
+  min-height: 50vh;
+  background-color: rgba(201, 199, 199, 0.527);
+  margin: auto;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+}

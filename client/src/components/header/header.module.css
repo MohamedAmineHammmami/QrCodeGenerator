@@ -1,0 +1,39 @@
+.container {
+  width: 30vw;
+  height: 30vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.container img {
+  width: 45%;
+  translate: 40px;
+}
+
+.slogan {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.slogan span {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  font-family: roboto;
+}
+
+.slogan span,
+h1 {
+  text-shadow: 5px 5px 5px black;
+}
+
+.slogan h1 {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  font-family: roboto;
+  color: white;
+}

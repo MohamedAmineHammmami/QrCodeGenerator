@@ -1,0 +1,13 @@
+button {
+  width: 65%;
+  height: 2.7rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-size: roboto;
+  border-radius: 1rem;
+  transition: scale 200ms ease;
+}
+
+button:hover {
+  scale: 1.1;
+}

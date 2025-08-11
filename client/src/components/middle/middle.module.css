@@ -1,0 +1,5 @@
+.container {
+  width: 30%;
+  border-right: 0.3rem solid #aad883;
+  box-sizing: border-box;
+}

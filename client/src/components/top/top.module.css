@@ -1,0 +1,29 @@
+.container {
+  width: 70%;
+  height: 10%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 5vh;
+  margin-bottom: 4vh;
+}
+
+.container img {
+  width: 15%;
+}
+
+.header {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.header p {
+  font-size: large;
+  color: #787878;
+}
+
+.header h1 {
+  color: #323232;
+}

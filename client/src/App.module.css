@@ -7,3 +7,8 @@
   color: #aad883;
   border-radius: 1rem;
 }
+
+::placeholder {
+  box-sizing: border-box;
+  padding: 0.3rem 0 0 0.3rem;
+}

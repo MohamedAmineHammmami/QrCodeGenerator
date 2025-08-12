@@ -16,6 +16,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .activeLink {
@@ -60,4 +61,31 @@
   opacity: 0.5;
   cursor: "not-allowed";
   pointer-events: none;
+}
+
+@keyframes leftSlideAnimation {
+  from {
+    transform: translateX(10%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rightSlideAnimation {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideLeft {
+  animation: leftSlideAnimation 0.5s ease;
+}
+
+.slideRight {
+  animation: rightSlideAnimation 0.5s ease;
 }

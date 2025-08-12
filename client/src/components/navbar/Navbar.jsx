@@ -19,22 +19,33 @@ const types = [
   "YOUTUBE",
   "WIFI",
   "EVENT",
-  "BITCON",
+  "BITCOIN",
 ];
 
 function Navbar() {
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(10);
   const [activeLink, setActiveLink] = useState("URL");
-  console.log("activeLink", activeLink);
+  const [animation, setAnimation] = useState({
+    state: false,
+    direction: null,
+  });
 
   const handleBackward = () => {
     setMax((c) => (c > 10 ? c - 3 : c));
     setMin((c) => (c > 0 ? c - 3 : c));
+    setAnimation({ state: true, direction: "left" });
+    setTimeout(() => {
+      setAnimation({ state: false, direction: null });
+    }, 1000);
   };
   const handleForward = () => {
     setMax((c) => (c < 14 ? c + 3 : c));
     setMin((c) => (c < 6 ? c + 3 : c));
+    setAnimation({ state: true, direction: "right" });
+    setTimeout(() => {
+      setAnimation({ state: false, direction: null });
+    }, 500);
   };
 
   const handleClick = (e) => {
@@ -46,7 +57,15 @@ function Navbar() {
         className={min < 3 ? navbarStyle.disableIcon : navbarStyle.icon}
         onClick={handleBackward}
       />
-      <div className={navbarStyle.types}>
+      <div
+        className={
+          animation.state && animation.direction === "right"
+            ? navbarStyle.types + " " + navbarStyle.slideLeft
+            : animation.state && animation.direction === "left"
+            ? navbarStyle.types + " " + navbarStyle.slideRight
+            : navbarStyle.types
+        }
+      >
         {types
           .map((el, i) => {
             return (

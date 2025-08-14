@@ -9,11 +9,12 @@ import Vcard from "../contents/vcard/Vcard";
 import Pdf from "../contents/pdf/Pdf";
 import Location from "../contents/location/Location";
 import Facebook from "../contents/facebook/Facebook";
+import Mp3 from "../contents/mp3/Mp3";
 
 function Left() {
   return (
     <div className={leftStyle.container}>
-      <Facebook />
+      <Mp3 />
     </div>
   );
 }

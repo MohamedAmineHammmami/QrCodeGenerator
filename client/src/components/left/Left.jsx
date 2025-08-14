@@ -7,11 +7,12 @@ import Sms from "../contents/sms/Sms";
 import Phone from "../contents/phone/Phone";
 import Vcard from "../contents/vcard/Vcard";
 import Pdf from "../contents/pdf/Pdf";
+import Location from "../contents/location/Location";
 
 function Left() {
   return (
     <div className={leftStyle.container}>
-      <Pdf />
+      <Location />
     </div>
   );
 }

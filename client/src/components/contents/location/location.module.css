@@ -1,0 +1,28 @@
+.container {
+  width: 90%;
+  height: 90%;
+}
+
+.map {
+  width: 100%;
+  height: 65%;
+  border: 0.3rem solid #aad883;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+
+.container button {
+  width: 50%;
+  height: 10%;
+  background-color: #aad883;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  margin-left: calc(50% - 25%);
+  margin-top: 2rem;
+  transition: scale 0.3s ease;
+}
+
+.container button:hover {
+  scale: 1.051;
+}

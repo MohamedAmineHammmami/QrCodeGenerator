@@ -10,11 +10,12 @@ import Pdf from "../contents/pdf/Pdf";
 import Location from "../contents/location/Location";
 import Facebook from "../contents/facebook/Facebook";
 import Mp3 from "../contents/mp3/Mp3";
+import Mp4 from "../contents/mp4/Mp4";
 
 function Left() {
   return (
     <div className={leftStyle.container}>
-      <Mp3 />
+      <Mp4 />
     </div>
   );
 }

@@ -74,8 +74,3 @@ form button {
   text-decoration-thickness: 0.3rem;
   margin-bottom: 2rem;
 }
-
-input[type="number"]::-webkit-inner-spin-button {
-  display: none;
-  margin: 0;
-}

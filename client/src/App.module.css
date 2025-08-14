@@ -12,3 +12,8 @@
   box-sizing: border-box;
   padding: 0.3rem 0 0 0.3rem;
 }
+
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+}

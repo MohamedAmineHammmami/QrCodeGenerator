@@ -6,11 +6,12 @@ import Email from "../contents/email/Email";
 import Sms from "../contents/sms/Sms";
 import Phone from "../contents/phone/Phone";
 import Vcard from "../contents/vcard/Vcard";
+import Pdf from "../contents/pdf/Pdf";
 
 function Left() {
   return (
     <div className={leftStyle.container}>
-      <Vcard />
+      <Pdf />
     </div>
   );
 }

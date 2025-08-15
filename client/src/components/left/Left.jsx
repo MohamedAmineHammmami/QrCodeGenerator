@@ -12,11 +12,12 @@ import Facebook from "../contents/facebook/Facebook";
 import Mp3 from "../contents/mp3/Mp3";
 import Mp4 from "../contents/mp4/Mp4";
 import Twitter from "../contents/twitter/Twitter";
+import Youtube from "../contents/youtube/Youtube";
 
 function Left() {
   return (
     <div className={leftStyle.container}>
-      <Twitter />
+      <Youtube />
     </div>
   );
 }

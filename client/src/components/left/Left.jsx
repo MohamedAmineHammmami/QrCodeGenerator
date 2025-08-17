@@ -13,11 +13,12 @@ import Mp3 from "../contents/mp3/Mp3";
 import Mp4 from "../contents/mp4/Mp4";
 import Twitter from "../contents/twitter/Twitter";
 import Youtube from "../contents/youtube/Youtube";
+import Wifi from "../contents/wifi/Wifi";
 
 function Left() {
   return (
     <div className={leftStyle.container}>
-      <Youtube />
+      <Wifi />
     </div>
   );
 }

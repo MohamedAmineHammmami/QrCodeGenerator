@@ -1,0 +1,173 @@
+.container {
+  width: 90%;
+  height: 90%;
+}
+
+.container form {
+  width: 100%;
+  height: calc(100% - 75px);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.3rem;
+  text-underline-offset: 0.3rem;
+}
+
+.networkContainer {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.network {
+  width: 100%;
+  height: 35%;
+}
+
+.container input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 1rem;
+  margin-top: 0.4rem;
+}
+
+.hide {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in;
+}
+
+.hide:hover {
+  opacity: 1;
+}
+
+.hide span {
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hide input {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: #aad883;
+  transform: translateY(-15%);
+}
+
+.tooltip {
+  visibility: hidden;
+  width: fit-content;
+  height: 60%;
+  font-weight: 100;
+  font-size: 0.9rem;
+  background-color: gray;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 0.2rem;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0.5rem solid;
+  left: -0.9rem;
+  border-color: transparent gray transparent transparent;
+}
+
+.icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.icon:hover + .tooltip {
+  visibility: visible;
+}
+
+.passwordContainer {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.encryption {
+  width: 100%;
+  height: 20%;
+}
+
+.radioBtns {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.radioBtns input {
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: #aad883;
+}
+
+.radioBtns div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container form button {
+  width: 40%;
+  height: 10%;
+  background-color: #aad883;
+  margin-top: 1rem;
+  transition: scale 0.3s ease;
+}
+
+.container form button:hover {
+  scale: 1.1;
+  background-color: #bad883;
+}
+
+.activeLabel {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 0.3rem;
+  color: #aad883;
+  transition: scale 0.2s ease;
+}
+
+.activeLabel {
+  scale: 1.1;
+}
+
+.passiveLabel {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #aad883;
+  opacity: 0.4;
+}
